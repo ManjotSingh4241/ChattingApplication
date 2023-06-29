@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Chat Buddy a chatting application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manjot Singh",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.14.9",
+    "socket.io": "^4.7.1"
+  }
+}
