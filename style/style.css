@@ -24,6 +24,7 @@
     margin-right:auto;
     margin-top:1%;
     border:5px solid black;
+    overflow-y:auto;
 }
 
 .msg{
