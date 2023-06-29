@@ -30,16 +30,17 @@
 .msg{
     background-color: bisque;
     padding:10px;
-    width:20%;
+    max-width:50%;
+    width:auto;
     margin: 17px 2px;
 }
 
-#ml{
+.ml{
     float:left;
     clear:both;
 }
 
-#mr{
+.mr{
     float:right;
     clear:both;
 }
