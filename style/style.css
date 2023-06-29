@@ -1,0 +1,58 @@
+.logo {
+    width: 70px;
+    height: 50px;
+    padding: 1%;
+}
+
+.logonav {
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    width:99%;
+    height: 46px;
+    margin:auto;
+}
+
+.logonav h1 {
+    margin-left: 5%;
+}
+
+#chatarea{
+    height:500px;
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1%;
+    border:5px solid black;
+}
+
+.msg{
+    background-color: bisque;
+    padding:10px;
+    width:20%;
+    margin: 17px 2px;
+}
+
+#ml{
+    float:left;
+    clear:both;
+}
+
+#mr{
+    float:right;
+    clear:both;
+}
+
+.msgarea{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    max-width:985px;
+    width:500px;
+    margin-top:1%;
+}
+
+#msginp{
+    width:80%;
+}
