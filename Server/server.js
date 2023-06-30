@@ -1,11 +1,11 @@
-var express = require("express");
-var app = express();
-var http = require("http").createServer(app);
+const express = require("express");
+const app = express();
+const http = require("http").createServer(app);
 const io = require("socket.io")(http);
-var PORT = process.env.PORT || 8080;
-var path = require("path");
+const PORT = process.env.PORT || 8080;
+const path = require("path");
 
-app.use(express.static(path.join(__dirname, "../"))); 
+app.use(express.static(path.join(__dirname, "../")));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../index.html"));
@@ -24,8 +24,8 @@ io.on("connection", (socket) => {
     socket.broadcast.emit("receive", { message: message, name: users[socket.id] });
   });
 
-  socket.on("disconnect", (message) => {
-    socket.broadcast.emit("left", users[socket.id]);
+  socket.on("disconnect", () => {
+    socket.broadcast.emit("left", { name: users[socket.id] });
     delete users[socket.id];
   });
 });
