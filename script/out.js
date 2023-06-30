@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8080');
+const socket = io(); // Remove the explicit URL parameter
 
 const form = document.getElementById('msgbox');
 const messageInput = document.getElementById('msginp');
@@ -33,5 +33,5 @@ socket.on('receive', (data) => {
 });
 
 socket.on('left', (data) => {
-    append(`${name} left the chat`, 'ml');
-  });
+    append(`${data.name} left the chat`, 'ml');
+});
