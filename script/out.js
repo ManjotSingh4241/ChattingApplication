@@ -2,6 +2,8 @@ const form = document.getElementById('msgbox');
 const messageInput = document.getElementById('msginp');
 const messageContainer = document.querySelector('#chatarea');
 
+const socket = io(); // Initialize socket connection
+
 const append = (message, position) => {
   const messageElement = document.createElement('div');
   messageElement.innerText = message;
