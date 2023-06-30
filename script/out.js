@@ -1,5 +1,3 @@
-const socket = io(); // Remove the explicit URL parameter
-
 const form = document.getElementById('msgbox');
 const messageInput = document.getElementById('msginp');
 const messageContainer = document.querySelector('#chatarea');
