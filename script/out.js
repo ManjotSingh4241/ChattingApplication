@@ -1,8 +1,8 @@
+const socket = io();
+
 const form = document.getElementById('msgbox');
 const messageInput = document.getElementById('msginp');
 const messageContainer = document.querySelector('#chatarea');
-
-const socket = io(); // Initialize socket connection
 
 const append = (message, position) => {
   const messageElement = document.createElement('div');
@@ -33,5 +33,5 @@ socket.on('receive', (data) => {
 });
 
 socket.on('left', (data) => {
-    append(`${data.name} left the chat`, 'ml');
+  append(`${data.name} left the chat`, 'ml');
 });
