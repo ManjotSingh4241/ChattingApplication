@@ -1,3 +1,4 @@
+console.log('Out.js loadded')
 const socket = io();
 
 const form = document.getElementById('msgbox');
