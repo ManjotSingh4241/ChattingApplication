@@ -33,6 +33,6 @@ socket.on('receive', (data) => {
   append(`${data.name}: ${data.message}`, 'ml');
 });
 
-socket.on('left', (data) => {
-  append(`${data.name} left the chat`, 'ml');
+socket.on('left', (name) => {
+  append(`${name} left the chat`, 'ml');
 });
